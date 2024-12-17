@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+PT+Guides&display=swap');
+        </style>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Playwrite PT Guides", serif;
+    }
+    .first{
+        display: flex;
+       justify-content: space-between;
+       padding: 20px;
+       background: black;
+       color: rgb(211, 208, 203);
+    }
+    .navs ul{
+        display: flex;
+        list-style-type: none;
+    }
+    .navs ul li{
+        padding: 0 20px 0 20px;
+    }
+    .home{
+        background: url(/bed.jpeg);
+        min-height: 100vh;
+        color: white;
+        .menu{
+            display: none;
+        }
+    }
+    @media screen and (min-height: 0) and (max-width: 750px) {
+        .menu{
+            display: block;
+        }
+        .navs{
+            display: none;
+        }
+    }
+    .navs:hover{
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="first">
+            <div class="logo">Emmanuel</div>
+            <div class="menu">
+                <i class="fa-regular fa-bars"></i>
+            </div>
+            <div class="navs">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>blog</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="home">
+            <h2>salut</h2>
+            <p>I am a junior web developer</p>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/cdd5ff83f4.js" crossorigin="anonymous"></script>
+</html>
